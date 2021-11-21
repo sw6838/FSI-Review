@@ -16,7 +16,7 @@ let dogVotebtn = document.createElement('button');
 dogVotebtn.textContent = "Vote for Dog";
 dogDiv.append(dogVotebtn);
 
-let catVotebtn =document.createElement('button');
+let catVotebtn = document.createElement('button');
 catVotebtn.textContent = "Vote for Cat";
 catDiv.append(catVotebtn);
 
