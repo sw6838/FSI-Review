@@ -23,7 +23,7 @@ dogDiv.append(dogVotebtn);
 dogVotebtn.addEventListener('click', function(){
 dogVotes = dogVotes + 1;
 document.querySelector("#doggo-votes") .textContent = dogVotes;
-localStorage.setItem('dogVotes', dogVotes)
+localStorage.setItem('dogVotes', dogVotes);
 document.querySelector("#total-votes") .textContent = dogVotes + catVotes + fishVotes;
 })
 
@@ -34,6 +34,7 @@ catDiv.append(catVotebtn);
 catVotebtn.addEventListener('click', function(){
     catVotes = catVotes + 1;
     document.querySelector("#catto-Votes") .textContent = catVotes;
+    localStorage.setItem('catVotes', catVotes);
     document.querySelector("#total-votes") .textContent = dogVotes + catVotes + fishVotes;
 })
 
@@ -44,5 +45,6 @@ fishDiv.append(fishVotebtn);
 fishVotebtn.addEventListener('click', function(){
     fishVotes = fishVotes + 1;
     document.querySelector("#fish-Votes") .textContent = fishVotes;
+    localStorage.setItem('fishVotes', fishVotes);
     document.querySelector("#total-votes") .textContent = dogVotes + catVotes + fishVotes;
 })
